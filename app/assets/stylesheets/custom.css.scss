@@ -91,15 +91,15 @@ button.css3button:hover {
 
 
   transition-delay: 0s;
-  transition-duration: 0.25s;
+  transition-duration: 0.35s;
   transition-property: opacity, color;
   transition-timing-function: ease;
   -webkit-transition-delay: 0s;
-  -webkit-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.65s;
   -webkit-transition-property: opacity, color;
   -webkit-transition-timing-function: ease;
   -o-transition-delay: 0s;
-  -o-transition-duration: 0.25s;
+  -o-transition-duration: 0.35s;
   -o-transition-property: opacity, color;
   -o-transition-timing-function: ease;
 }
@@ -108,8 +108,11 @@ button.css3button:hover {
   background-color: #f2f2f2;
 }
 
-#navbar:hover a {
+#navbar a:hover{
   color: #7d3704;
+}
+
+#navbar:hover a {
   opacity: 1;
 }
 

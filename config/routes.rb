@@ -3,6 +3,10 @@ Personalsite::Application.routes.draw do
   match '/games' => 'high_voltage/pages#show', as: :static, id: 'games_index'
   match '/resume' => 'high_voltage/pages#show', as: :static, id: 'resume'
   match '/resumes' => 'high_voltage/pages#show', as: :static, id: 'resume'
+
+  match '/lightseeker' => 'high_voltage/pages#show', as: :static, id: 'lightseeker'
+
+  match '/cat4' => 'high_voltage/pages#show', as: :static, id: 'cat4'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
