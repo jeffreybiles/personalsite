@@ -1,0 +1,128 @@
+@mixin rounded {
+  $radius: 10px;
+
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+#game {
+  width: 800;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  padding-bottom: 40px;
+}
+
+.center {
+  text-align: center;
+}
+
+#navbar {
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+#container {
+  max-width: 700px;
+  margin: auto;
+}
+
+button.css3button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background: -moz-linear-gradient(
+    top,
+    #999897 0%,
+    #4d4c4d 50%,
+    #a3a3a3);
+  background: -webkit-gradient(
+    linear, left top, left bottom,
+    from(#999897),
+    color-stop(0.50, #4d4c4d),
+    to(#a3a3a3));
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 1px solid #000000;
+}
+
+button.css3button:hover {
+  color: #000000;
+  background: -moz-linear-gradient(
+    top,
+    #999897 0%,
+    #adacad 50%,
+    #a3a3a3);
+  background: -webkit-gradient(
+    linear, left top, left bottom,
+    from(#999897),
+    color-stop(0.50, #adacad),
+    to(#a3a3a3));
+}
+
+#navbar {
+  transition-delay: 0s;
+  transition-duration: 1s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-property: background-color;
+  -webkit-transition-timing-function: linear;
+  -o-transition-delay: 0s;
+  -o-transition-duration: 1s;
+  -o-transition-property: background-color;
+  -o-transition-timing-function: linear;
+}
+
+#navbar a {
+  color: #ad6704;
+  font-size: 30px;
+  opacity: 0.5;
+  padding: 10px;
+  text-decoration: none;
+
+
+  transition-delay: 0s;
+  transition-duration: 0.25s;
+  transition-property: opacity, color;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.25s;
+  -webkit-transition-property: opacity, color;
+  -webkit-transition-timing-function: ease;
+  -o-transition-delay: 0s;
+  -o-transition-duration: 0.25s;
+  -o-transition-property: opacity, color;
+  -o-transition-timing-function: ease;
+}
+
+#navbar:hover {
+  background-color: #f2f2f2;
+}
+
+#navbar:hover a {
+  color: #7d3704;
+  opacity: 1;
+}
+
+#resume_switcher {
+  text-align: center;
+  margin: 10px;
+}
+
+#resumes {
+  max-width: 700px;
+  margin: auto;
+}
+
+.twelvepix {
+  font-size: 12px;
+}

@@ -1,0 +1,30 @@
+
+#container .expandable {
+  color: #208020;
+  cursor: pointer;
+  transition-delay: 0s;
+  transition-duration: 0.25s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.25s;
+  -webkit-transition-property: background-color;
+  -webkit-transition-timing-function: linear;
+  -o-transition-delay: 0s;
+  -o-transition-duration: 0.25s;
+  -o-transition-property: background-color;
+  -o-transition-timing-function: linear;
+}
+
+#container .expandable:hover {
+  background-color: #eeeeee;
+}
+
+
+#container h2 .expandable {
+    color: #157014;
+}
+
+p {
+  font-size: 1.3em;
+}

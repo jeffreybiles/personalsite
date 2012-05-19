@@ -1,7 +1,8 @@
 Personalsite::Application.routes.draw do
   root to: 'high_voltage/pages#show', id: 'home'
-
   match '/games' => 'high_voltage/pages#show', as: :static, id: 'games_index'
+  match '/resume' => 'high_voltage/pages#show', as: :static, id: 'resume'
+  match '/resumes' => 'high_voltage/pages#show', as: :static, id: 'resume'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

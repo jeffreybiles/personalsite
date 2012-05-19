@@ -1,0 +1,37 @@
+#games {
+  width: 825px;
+  margin: auto;
+}
+
+#games h2 {
+
+}
+
+#games .game {
+  width: 800px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.game img {
+  float: left;
+  height: 180px;
+  width: 180px;
+  margin: 10px
+
+}
+.game .exposition {
+  width: 720px;
+  margin: 10px;
+}
+
+.game li {
+  list-style-type: none;
+}
+
+.line825  {
+  width: 825;
+  margin: auto;
+  border: 1px black solid;
+}
