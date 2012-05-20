@@ -12,6 +12,9 @@ Personalsite::Application.routes.draw do
   match '/boundaries' => 'high_voltage/pages#show', as: :static, id: 'boundaries'
   match '/numbernommers' => 'high_voltage/pages#show', as: :static, id: 'numbernommers'
   match '/numbernommers2' => 'high_voltage/pages#show', as: :static, id: 'numbernommers2'
+  match '/tat' => 'high_voltage/pages#show', as: :static, id: 'tat'
+  match '/vengeance' => 'high_voltage/pages#show', as: :static, id: 'vengeance'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
