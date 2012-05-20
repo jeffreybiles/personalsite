@@ -10,6 +10,7 @@ gem 'high_voltage'
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'thin'
+gem 'soundmanager-rails', :git => 'git://github.com/glaszig/soundmanager-rails.git'
 
 
 # Gems used only for assets and not required

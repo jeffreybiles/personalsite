@@ -7,6 +7,12 @@ Personalsite::Application.routes.draw do
   match '/lightseeker' => 'high_voltage/pages#show', as: :static, id: 'lightseeker'
 
   match '/cat4' => 'high_voltage/pages#show', as: :static, id: 'cat4'
+  match '/sectarian' => 'high_voltage/pages#show', as: :static, id: 'sectarian'
+  match '/blowback' => 'high_voltage/pages#show', as: :static, id: 'blowback'
+  match '/boundaries' => 'high_voltage/pages#show', as: :static, id: 'boundaries'
+  match '/numbernommers' => 'high_voltage/pages#show', as: :static, id: 'numbernommers'
+  match '/numbernommers2' => 'high_voltage/pages#show', as: :static, id: 'numbernommers2'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
