@@ -4,8 +4,8 @@ Personalsite::Application.routes.draw do
   match '/resume' => 'high_voltage/pages#show', as: :static, id: 'resume'
   match '/resumes' => 'high_voltage/pages#show', as: :static, id: 'resume'
 
+  #games
   match '/lightseeker' => 'high_voltage/pages#show', as: :static, id: 'lightseeker'
-
   match '/cat4' => 'high_voltage/pages#show', as: :static, id: 'cat4'
   match '/sectarian' => 'high_voltage/pages#show', as: :static, id: 'sectarian'
   match '/blowback' => 'high_voltage/pages#show', as: :static, id: 'blowback'
