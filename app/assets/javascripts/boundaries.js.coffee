@@ -1,13 +1,13 @@
 @boundaries = ->
-  soundManager.onready ->
-
-    soundManager.createSound
-      id:'hit'
-      url:'boundaries_sounds/hit.mp3'
-
-    soundManager.createSound
-      id:'defeat'
-      url:'boundaries_sounds/defeat.mp3'
+#  soundManager.onready ->
+#
+#    soundManager.createSound
+#      id:'hit'
+#      url:'boundaries_sounds/hit.mp3'
+#
+#    soundManager.createSound
+#      id:'defeat'
+#      url:'boundaries_sounds/defeat.mp3'
 
   canvas = document.getElementById("myCanvas")
   canvasId = "myCanvas"
@@ -43,11 +43,11 @@
     ctx.fillStyle = '#CCA981'
     ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-  loadAndPlaySound = (fileName) ->
-    sound = document.createElement('audio')
-    sound.setAttribute('src', "#{fileName}")
-    sound.load()
-    sound.play()
+#  loadAndPlaySound = (fileName) ->
+#    sound = document.createElement('audio')
+#    sound.setAttribute('src', "#{fileName}")
+#    sound.load()
+#    sound.play()
 
   Key =
     _pressed: {},
@@ -79,7 +79,7 @@
         @draw()
       else
         @stillAlive = false
-        soundManager.play('defeat')
+#        soundManager.play('defeat')
 
     draw: ->
       ctx.fillStyle = @color
@@ -149,7 +149,7 @@
   collision = (hitter, hittee, modifiers = 1) ->
     hittee.dx = Math.cos(hitter.angle + Math.PI/2)*hitSpeed*modifiers
     hittee.dy = Math.sin(hitter.angle + Math.PI/2)*hitSpeed*modifiers
-    soundManager.play('hit')
+#    soundManager.play('hit')
 
   electronCollision = (atom1, atom2) ->
     collision(atom1, atom2, 0.3)
