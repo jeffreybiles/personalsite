@@ -1,0 +1,63 @@
+<div class="writing_container">
+<h1>LETTUCE MAKE A GAME!!!</h1>
+<p>What is this magical game we're making?  It's a simple shooter that doubles as a commentary on the unintended consequences of violence.  You don't have to worry about that second part, but you can check it out <a href=”jeffreybiles.com/blowback”>here</a>.  Or you can just follow along and be surprised at the end.
+<p>We're going to be using html5 canvas and coffeescript, combined with a little jQuery, to make our game.  We're using canvas because we can make it with simple tools and share it almost instantly.  We're using coffeescript instead of plain javascript because 1) coffeescript's class structure is very useful for what we're about to do and 2) it's pretty!
+
+<h2>Can Vase</h2>
+<p>The first thing we're going to do is set up a basic canvas.  Since this is the internet, and things here are magic,
+  I can show you the code and you can play with it right in your browser.</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/3/embedded/result,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+ <p>Wonderful, yes?  Click on the html tab.  You can see that we created a canvas element.  That is all the html that we'll be doing for a while now.</p>
+ <p>Now look in the css file.  See the css file, with its one line?  It's to make the canvas visible.  That's all the css we'll be doing for a while as well.  The rest is coffeescript.</p>
+
+<h2>Sir Kill</h2>
+<p>The game we're going to make has lots and lots of circles, so our first order of business should be learning how to draw one.  This step is more lines of code than I would hope, but it's still not too difficult</p>
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/6/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>The first line is grabbing the canvas and putting it into a variable.  The second line is telling the canvas
+    that we'll be working in 2d.  Everything after that--indeed, all of our interactions with the canvas itself--
+    will happen through the context(ctx) variable we just defined.</p>
+  <p>In line 3, we define the fillStyle (the color) through hexadecimal.  In line 4, we tell canvas to "start remembering what we tell you".
+    In line 6, we'll tell it to "do everything that we just told you".  In between (in this case, in line 5) are our instructions.</p>
+  <p>Circles are made by taking an arc through 360 degrees (or, as noted in the function call, from 0 to 2pi).
+    The first two variables are the x and y value of the center of the circle, and the third variable is the radius (all in pixels).
+    The last three will always be the same in a circle, so you don't need to worry about them.</p>
+  <p>Great, now we've drawn something! But if that was enough, the world would be awash in pen and paper shooters.  Let's make it move!</p>
+
+<h2>Axe Shun</h2>
+  <p>Here we're going to learn about two new subjects:  coffeescript variables and coffeescript functions.
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/26/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <h3>Very Able</h3>
+  <p>Those of you only familiar with javascript are likely terrified by the first two lines, because they look an awful lot like global variables.
+    But remember, we're writing in coffeescript, which is like javascript with magical fairy dust on top.  You can learn more about it at the coffeescript web site,
+    but all you need to know for now is that it's really hard to do the wrong thing with variables in coffeescript.  x and y, even without a 'var' in front, are properly scoped.
+  <p>We use these variables to keep track of where the circle is.  Jumping a bit ahead, you can see that we add one to each when we go through our loop.  That's what creates our motion.</p>
+
+  <h3>Funk Chan</h3>
+  <p>Next, you're probably wondering what this "mainLoop" contraption is.  Never fear!  I have answers!
+  <p>The first word, 'mainLoop', is the variable that we're assigning the function to.  If you're coming from another language this may seem weird, but yes...
+  if we want to keep our functions around, we assign them to variables.  That also explains the equals sign.  The arrow signals that we're going to be
+  making a function, and it translates into 'function()' in plain javascript.  It has optional parentheses beforehand (aka, you could write '()->',
+  but you don't have to if you're not passing it any arguments.
+  <p>We've started our function, but how do we know when it's done?  There are no curly braces or 'end' statements!  Not even semicolons!
+  <p>That's because coffeescript is whitespace delimited, which means that our tabs tell us when a block of code is finished.  Notice that
+  everything right after 'mainLoop = ->' is indented one tab?  If it follows immediately after, and is indented one tab more (in this case, one tab),
+  then it is part of the function.  The final line, which calls mainLoop, is not part of the function.  You can tell by the fact that it has the same
+  indentation as the function definition (zero in this case).
+<h2>Thyme Out</h2>
+  <p>There are two problems with this code.  The first is that the ball moves WAY too fast, so fast that you can't even see it go.
+  The second has to do with the nature of canvas drawing, and is manifested in the circle leaving behind a streak of black wherever it has been.
+  <p>We'll tackle the speed problem first.</p>
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/25/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+  <p></p>
+
+
+<h2></h2>
+  We'll also explore the nature of the canvas and what it means for our drawing.
+
+  <h2>Watts necks</h2>
+  <p>So we've got moving circles. Great!  This is a good step forward.  However, right now this is less a game and more a windows 95 screensaver.
+   <p>In part 2 of this series, we'll make the circles bounce, learn about keyboard input, and create two different types of circles (you and the enemy) using coffeescript classes.
+  <p>In part 3, we'll learn about mouse input, create some bullets, and figure out collision detection.
+  <p>In part 4, we'll polish up our game
+</div>
