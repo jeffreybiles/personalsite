@@ -47,14 +47,26 @@
   <p>There are two problems with this code.  The first is that the ball moves WAY too fast, so fast that you can't even see it go.
   The second has to do with the nature of canvas drawing, and is manifested in the circle leaving behind a streak of black wherever it has been.
   <p>We'll tackle the speed problem first.</p>
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/25/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>The problem right now is that the computer is running through the loop as fast as it possibly can.  This happens to be way faster than we want.
+    Imagine if your computer played videos as fast as it could read them... it would be terrible!  Except for Michael Bay movies, which would be much improved.
+    In the movies, we have the concept of a frame, and the computer knows to only play 24 (or 30, or 60, depending on the format) of these frames per second.
+    We'll take advantage of this concept, and tell the computer to only run through the loop 60 times every second.</p>
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/25/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>The way we're doing this here is by calling setTimeout.  This simply tells the browser to wait a certain amount of time, then call a function.
+    In this case, it calls the mainLoop function after 1000/60 milliseconds (or, 60 times per second).</p>
+  <p>In real life, I use the requestAnimationFrame function, which fulfills the same function as setTimeout but does it better.
+    However, I couldn't get it working on jsFiddle, so we'll use setTimeout for now.</p>
 
-  <p></p>
-
-
-<h2></h2>
-  We'll also explore the nature of the canvas and what it means for our drawing.
-
+<h2>Clean Slate</h2>
+  <p>The final piece of the moving circle puzzle is fixing its current practice of leaving a big black trail behind it.
+    To understand this, we'll need to explore the nature of the canvas and what it means for our drawing.
+  <p>Like the name suggests, the canvas is just a big chunk of screen to draw things on.  You can draw over things, but there's
+    not a built-in erase function.  That means once you draw something, it stays there by default until you draw over it or manually clear it.</p>
+  <p>This isn't great for what is supposed to be a moving object.  To fix this, we'll manually clear everything in a
+  rectangle the size of the canvas, essentially giving us a blank slate every frame.</p>
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/39/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>clearRect does pretty much what you expect it to.  The first two variables are the x and the y position of the upper left corner,
+  and the second two are the width and the height.  The closely related function fillRect works in a similar manner.</p>
   <h2>Watts necks</h2>
   <p>So we've got moving circles. Great!  This is a good step forward.  However, right now this is less a game and more a windows 95 screensaver.
    <p>In part 2 of this series, we'll make the circles bounce, learn about keyboard input, and create two different types of circles (you and the enemy) using coffeescript classes.
