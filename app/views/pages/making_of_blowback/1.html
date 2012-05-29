@@ -67,9 +67,20 @@
   <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/39/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>clearRect does pretty much what you expect it to.  The first two variables are the x and the y position of the upper left corner,
   and the second two are the width and the height.  The closely related function fillRect works in a similar manner.</p>
-  <h2>Watts necks</h2>
+
+<h2>Bound Sing</h2>
+  <p>The circle moves, but it if you watch it for more than a few seconds, it will disappear off of our canvas.
+    It will keep on moving, but you can't see it.  We want to see our circle!  So we'll make it bounce.</p>
+  <iframe style="width: 100%; height: 350px" src="http://jsfiddle.net/2vNsz/40/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>Our first steps are to variabalize the radius of the circle and the x and y speeds (dx and dy respectively) of our circle.  This lets us call them in multiple
+    places and change them at will.  Specifically, in this case, we will use the radius of the circle in multiple places to tell when to bounce,
+  and we'll use dx and dy to change the direction of the circle once it hits the wall.</p>
+  <p>Most of the new action takes place in the if-else statement.  It checks if it's gone outside one of the borders, and if it has,
+    it reverses the direction.</p>
+
+<h2>Watts necks</h2>
   <p>So we've got moving circles. Great!  This is a good step forward.  However, right now this is less a game and more a windows 95 screensaver.
-   <p>In part 2 of this series, we'll make the circles bounce, learn about keyboard input, and create two different types of circles (you and the enemy) using coffeescript classes.
+  <p>In part 2 of this series, we'll learn about classes and inheritance in Coffeescript, make Player and Enemy classes, and learn about keyboard input.
   <p>In part 3, we'll learn about mouse input, create some bullets, and figure out collision detection.
   <p>In part 4, we'll polish up our game
 </div>

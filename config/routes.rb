@@ -14,7 +14,9 @@ Personalsite::Application.routes.draw do
   match '/numbernommers2' => 'high_voltage/pages#show', as: :static, id: 'numbernommers2'
   match '/tat' => 'high_voltage/pages#show', as: :static, id: 'tat'
   match '/vengeance' => 'high_voltage/pages#show', as: :static, id: 'vengeance'
-  match '/blowback/making_of' => 'high_voltage/pages#show', as: :static, id: 'making_of_blowback'
+  match '/blowback/making_of' => 'high_voltage/pages#show', as: :static, id: 'making_of_blowback/1'
+  match '/blowback/making_of/1' => 'high_voltage/pages#show', as: :static, id: 'making_of_blowback/1'
+  match '/blowback/making_of/2' => 'high_voltage/pages#show', as: :static, id: 'making_of_blowback/2'
 
 
   # The priority is based upon order of creation:
