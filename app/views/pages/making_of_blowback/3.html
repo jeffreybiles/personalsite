@@ -33,5 +33,15 @@
 
 <h2>Cull Her, Soup Her</h2>
   <p>In case you were wondering, <b>no</b>, we haven't fully explored the power of classes yet.  We want to have players
-    and enemies to be different colors, and to that we will use a tool called 'super'.</p>
+    and enemies be different colors, and to do that we will use a tool called 'super'.</p>
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/86/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>The first thing you'll notice is that we made a subclass called Enemy.  From now on, we won't be making any plain circles.  Circle is just something
+  that describes what all circles have in common.  To underscore this, I took out the constructor method from Circle.</p>
+  <p>The second difference is that Circle and both of the subclasses have a method called draw.  If both of the subclasses
+    have this method, why keep one around on the superclass?  The answer is that even though we want to draw the circles as
+  different colors, they still share most of the drawing code.  Thus, we have kept most of the code in Circle's draw method, while
+  each of the subclasses call 'super'.  'super' calls the same method, but on the superclass.  In this case, we have each of the
+  subclasses' 'draw' methods simply feeding the superclasses' (Circle's) 'draw' method a color.</p>
 </div>
+
+<h2>Cull His Shins</h2>
