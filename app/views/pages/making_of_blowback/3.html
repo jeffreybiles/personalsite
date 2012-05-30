@@ -1,0 +1,37 @@
+<div class="writing_container">
+
+<h1>I LIKE TO MOVE IT MOVE IT</h1>
+<p>Let's get started right away.  And to facilitate that, we're going to take part of our code temporarily back to the dark ages (aka, no list comprehensions).</p>
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/69/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<p>First, click on the screen so that it will pick up your commands.  Then, press and hold one of the arrow keys.  Or many of them at once.</p>
+<p>You see that?  That's the first step on the way to making our game interactive.</p>
+<p>You'll notice that a <b>lot</b> of code has been added.  The good news is that this code can be used practically verbatim
+  in any project where you require interaction of this sort.  This means that we don't have to go over it as painstakingly as we did the code in the last installment.</p>
+<p>Still, there are some basics you need to be aware of.  First, each key on the keyboard has a number.  For example, 37 is 'left'.
+  There are two different events that the keyboard can fire: keyup and keydown.  As you can guess, when you press a button keyup is fired,
+  and when you release a button keydown is fired.</p>
+<p>What we're doing is whenever keydown is fired, we add that key to a list.  When keyup is fired, we take it off that list.
+  The list is of every key that is currently being pressed.</p>
+<p>And what, exactly, is firing anyways?  It's something the browser sends to your code.</p>
+<p><i>It is okay if you don't understand anything in this section.</i>  I didn't get everything until the third or fourth time I used this code.
+  The point is, copy the code and look into it more if you need to change it.</p>
+  <p>For the rest of the time we can safely ignore all that messy keyboard code.  To signal that, I'm going to put it at the bottom.
+    I'm also going to take our code back up to modernity by reimplementing list comprehensions.  Now, on to better things!</p>
+
+<h2>Play York Lass</h2>
+  <p>What we want now is to be able to control one circle but have the rest bouncing around randomly.  The first attempt we'll make will work, but is incredibly naive:
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/77/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>We made two classes:  Circle (using our code from part 2) and Player(using our code from just now).  This works, but you'll notice that
+  the 'move' and 'draw' functions are <i>exactly the same</i>.  That's because Player is a special type of Circle.</p>
+  <p>In coffeescript (and other object-oriented languages) there is a the concept of a "subclass".  Basically, you take the functionality
+  of one class and change it.  Here's the same thing, but with Player existing as a subclass of Circle.</p>
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/76/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>You'll notice that Player only has functions for 'constructor' and 'update'.  That's because, as we said before, 'draw' and 'move' are exactly
+  the same for Player and Circle.  If the computer doesn't find a function in the subclass (Player) it will look for it in the superclass (Circle).
+  You just saved lots of code!  It gets even better when you have multiple subclasses, and in case you're wondering, we will eventually have
+  subclasses for Player, Enemy, and Bullet.</p>
+
+<h2>Cull Her, Soup Her</h2>
+  <p>In case you were wondering, <b>no</b>, we haven't fully explored the power of classes yet.  We want to have players
+    and enemies to be different colors, and to that we will use a tool called 'super'.</p>
+</div>
