@@ -1,0 +1,47 @@
+<div class="writing_container">
+<h1>BULL EATS</h1>
+  <p>At the end of our last session we had a bunch of enemies bouncing around, and our player simply doing its best to avoid getting in their way.
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/100/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>It's time to fight back.  In this session, we'll give our player bullets.  Or, if violence makes you squeamish, shootable hugs.
+
+<h2>That's Mice</h2>
+  <p>The end goal is to have the player click on any point on the screen and for a bullet to fly from their circle to that point and beyond.
+  The first step is figuring out where a player clicked.</p>
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/102/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>Go ahead and click on the canvas, then check out the javascript.  We'll walk through it step by step.
+  <p>$(document).mousedown sets a trigger, so that anytime we click on the screen it will call the function in the parentheses right afterwards.
+    You'll notice that we give it the name of a function, but we don't include the parentheses.  If we included the parentheses, we would call the function immediately.
+    As it is, we are defining what is known as a callback function.  It's a bit like giving out your phone number; you might not get a call right away,
+    but you could get multiple calls in the future.</p>
+  <p>findMousePosition takes one argument: event.  Javascript is smart, and will pass the mousedown event to the callback function.
+    This event object has properties that tell us the x and y position of the mouse.  As you can see, we use those in the alert.
+    Next, we'll use them to place bullets.</p>
+
+<h2>Plays Mint</h2>
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/103/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>I've added back the Circle class and created a Bullet subclass.  The only thing novel about this is that now, instead of
+    popping an alert every time we click, we place a bullet at that location.
+  <p>Next we'll use trigonometry to figure out how to make our bullets move.</p>
+
+<h2>Trigger No My Tree</h2>
+  <p>By the end we'll want to have the bullets originate at the player, but for now we'll have them originate from the center (200, 150).</p>
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/105/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>Click around.  Notice that the bullets inherited the bounce-off-walls behaviour from Circle.  That might not always be
+    what we want for bullets, but in this case it is, so we will leave that unchanged.</p>
+  <p>To make this work, we reinstated the circles list and the loop.  We also made it so that when the mouse is clicked,
+    it not only creates a bullet but adds it to 'circles'.  These two steps should make sense given what we've already done.</p>
+  <p>The third thing we added this go-round was to the constructor of Bullet.  Basically, we define a bulletSpeed at the top of our code,
+    then do a bunch of trigonometry in order to figure out what angle it will be flying at and how to make it fly like that.</p>
+  <p>How much trig do you need to know to make a javascript game?  If it involves any sort of shooting or moving at an angle, it will
+    probably require a surprising amount.  However, that is beyond the scope of this tutorial, and those interested can go
+    <a href="http://www.khanacademy.org/math/trigonometry">here</a>.</p>
+  <p>Now that we've hand-waved away lots of math, we'll dump back in a bunch of code and hand-wave even more math.</p>
+
+
+  //add player back in
+
+<h2></h2>
+  //collision detection revamped
+  //how to remove something that has collided
+  //add in enemies again
+</div>
