@@ -41,7 +41,38 @@
     have this method, why keep one around on the superclass?  The answer is that even though we want to draw the circles as
   different colors, they still share most of the drawing code.  Thus, we have kept most of the code in Circle's draw method, while
   each of the subclasses call 'super'.  'super' calls the same method, but on the superclass.  In this case, we have each of the
-  subclasses' 'draw' methods simply feeding the superclasses' (Circle's) 'draw' method a color.</p>
-</div>
+  subclasses' 'draw' methods simply feeding the superclass's (Circle's) 'draw' method a color.</p>
 
 <h2>Cull His Shins</h2>
+  <p>We've made good progress today, but before we go, we should fix one problem.  Simply, our enemies are not very frightening...
+    you can pass through them just like ghosts!  We need something called 'collision detection', which will tell us when two
+    objects have collided.  However, we don't want enemies destroying each other, and we don't want each object destroying itself,
+    so we'll need to be smart about it.  However, being smart doesn't mean we can't throw together a few temporary hacks to get us started.</p>
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/93/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>We've written two very respectable functions, findDistance and hasCollidedWith (the second of which is attached to the Circle class),
+    and we'll discuss them more in a bit.  The hack is in the main loop, where we call the hasCollidedWith function.  The hack part is that
+    we're assuming that we will only have two circles, one of which is the player.  We'll fix this later, of course.</p>
+  <p>One good thing about this function call that I would like you to notice is that it reads very much like English:  player.hasCollidedWith(enemy).
+    As you might expect, it returns true if they have collided and false if they haven't.  Someone reading this code in the future
+    would know pretty much what the function does without having to look it up.  Compare that to if we had done bash-style naming; plyr.hclw(nmy).
+    That'll make sense for about the next ten minutes, but something well-named will make sense for years.</p>
+  <p>Back to our code.  The last hacky part is that it simply calls an alert when the function returns true.  This is good enough for testing, but
+  it would be terrible in a game.</p>
+  <p>Now to the meat of the section.  hasCollidedWith is attached to Circle, and simply compares the radii with the distance between
+  the two circles.  To do that, it calls findDistance, an unattached function that simply takes two objects and does some trigonometry
+  to figure out how far apart they are.  It also does something clever so that if you accidentally compare an object with itself, it will
+  tell you it is far far away.  While this does couple the function with hasCollidedWith, and coupling is generally bad practice, it will do for now.</p>
+  <p>One question you might be asking:  why is hasCollidedWith attached to Circle but findDistance is not?  The simple answer is that hasCollidedWith relies
+  on both objects having a radius, while findDistance merely requires an x and a y value.  Thus, we could use findDistance for other shapes if the need arose.</p>
+
+<h2>Sir Rounded</h2>
+  <p>Because of one of the hacks used to get the example up and running quickly, it's currently impossible to have more than one enemy.  Let's fix that.
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/100/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>Here's what we did:  first, we reinstated circleFactory as enemyFactory.  Then, we called it with eight circles, and added our player to the end of circles as well.
+  However, we also kept player around in a variable so that we can call methods specifically on it.  We do that in the main loop, calling our new method
+  'checkAllCollisionsWith', which takes a list of circles and calls hasCollidedWith for each one of them.
+
+<h2>Lay Tar</h2>
+  <p>Next time, we'll be making bullets.  This will require mouse detection, some trig, and even more advanced collision detection.  See you then!</p>
+
+</div>
