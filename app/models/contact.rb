@@ -4,6 +4,7 @@ class Contact < ActiveRecord::Base
   after_create :deliver_contact_notification
 
   def deliver_contact_notification
-    ContactMailer.contact(self).deliver
+    ContactMailer.notify(self).deliver
+    #ContactMailer.contact(self).deliver
   end
 end
