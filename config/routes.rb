@@ -3,7 +3,8 @@ Personalsite::Application.routes.draw do
   match '/games' => 'high_voltage/pages#show', as: :static, id: 'games_index'
   match '/resume' => 'high_voltage/pages#show', as: :static, id: 'resume'
   match '/resumes' => 'high_voltage/pages#show', as: :static, id: 'resume'
-
+  resources :contacts
+  match '/contact', to: 'deprecated_contacts#new'
   #games
   match '/lightseeker' => 'high_voltage/pages#show', as: :static, id: 'lightseeker'
   match '/cat4' => 'high_voltage/pages#show', as: :static, id: 'cat4'

@@ -1,0 +1,35 @@
+
+#contact_form
+  .header
+    %h2
+      Tell me
+      %i exactly
+      what you think
+  .javascript_response
+
+  = form_for @contact do |f|
+    .name= f.text_field :name, :placeholder => 'Name (optional)'
+    .email_address= f.text_field :email, :placeholder => 'Email Address (optional)'
+    .message= f.text_area :message, placeholder: 'Your message here.'
+    #contact_button= f.submit 'Send it away!', :id => 'sign_up'
+#javascript_response
+
+-#= form_for @contact do |f|
+-#  -if @contact.errors.any?
+-#    #error_explanation
+-#      %h2= "#{pluralize(@contact.errors.count, "error")} prohibited this contact from being saved:"
+-#      %ul
+-#        - @contact.errors.full_messages.each do |msg|
+-#          %li= msg
+-#
+-#  .field
+-#    = f.label :email
+-#    = f.text_field :email
+-#  .field
+-#    = f.label :name
+-#    = f.text_field :name
+-#  .field
+-#    = f.label :message
+-#    = f.text_area :message
+-#  .actions
+-#    = f.submit 'Save'
