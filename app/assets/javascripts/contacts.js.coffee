@@ -6,7 +6,6 @@ $(document).ready ->
   console.log("Ready!")
   $('#contact_form form').submit (event) ->
     console.log("submit form hit!", event)
-    $('#contact_button').attr('disabled': 'disabled')
     event.preventDefault()
     console.log("About to AJAX")
     $.ajax
@@ -22,8 +21,7 @@ $(document).ready ->
         else
           alert('second choice')
           $('#contact_form .javascript_response').html(json.html)
-      after: ->
-        console.log("after")
-        $('#contact_button').removeAttr('disabled')
+      failure: (json, status) ->
+        console.log("Failure :(", json, status)
 
     return false
