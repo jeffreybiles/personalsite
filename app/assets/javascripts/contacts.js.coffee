@@ -7,11 +7,10 @@ $(document).ready ->
   $('#contact_form form').submit (event) ->
     console.log("submit form hit!", event)
     event.preventDefault()
-    console.log("About to AJAX", $(this))
+    console.log("About to AJAX", $(this).serialize())
     $.ajax
       type: 'POST'
       url: '/contacts'
-      data: $(this)
       dataType: 'json'
       success: (json, status) ->
         console.log("success!", json, status)
