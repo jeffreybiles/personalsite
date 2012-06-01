@@ -21,7 +21,7 @@ $(document).ready ->
         else
           alert('second choice')
           $('#contact_form .javascript_response').html(json.html)
-      failure: (json, status) ->
+      error: (json, status) ->
         console.log("Failure :(", json, status)
 
     return false
