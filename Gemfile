@@ -13,7 +13,7 @@ gem 'thin'
 #gem 'soundmanager-rails', :git => 'git://github.com/glaszig/soundmanager-rails.git'
 gem 'mail'
 gem 'json'
-gem 'quiet_assets'
+#gem 'quiet_assets'
 gem 'make_resourceful'
 
 # Gems used only for assets and not required
