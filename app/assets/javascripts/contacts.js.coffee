@@ -3,9 +3,12 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 $(document).ready ->
+  console.log("Ready!")
   $('#contact_form form').submit (event) ->
+    console.log("submit form hit!", event)
     $('#contact_button').attr('disabled': 'disabled')
     event.preventDefault()
+    console.log("About to AJAX")
     $.ajax
       type: 'POST'
       url: $(this).attr('action')
@@ -20,6 +23,7 @@ $(document).ready ->
           alert('second choice')
           $('#contact_form .javascript_response').html(json.html)
       after: ->
+        console.log("after")
         $('#contact_button').removeAttr('disabled')
 
     return false
