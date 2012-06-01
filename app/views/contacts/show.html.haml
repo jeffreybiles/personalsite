@@ -1,15 +1,9 @@
-%p#notice= notice
+%h3
+  %i We got this.
 
 %p
-  %b Email:
+  You should be getting an automatic email at
   = @contact.email
-%p
-  %b Name:
-  = @contact.name
-%p
-  %b Message:
-  = @contact.message
-
-= link_to 'Edit', edit_contact_path(@contact)
-\|
-= link_to 'Back', contacts_path
+  real soon, and a personal response within 24 hours.
+%p Thanks!
+%p= '--Jeffrey'
