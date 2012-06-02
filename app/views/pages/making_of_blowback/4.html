@@ -67,15 +67,18 @@
     with all the circles previous, it starts on the next one.  Since this is the most CPU-intensive part of the game, this one step makes
     our game run roughly twice as fast.</p>
   <p>Now that we have a proper collision detection system, we add back in the enemies.</p>
-  <!--Okay, make it so that -->
-    <!--It would do us well to move the checkAllCollisionsWith method from Player to Circle.-->
-  <p>Now to check whether any bullets have collided with anything, we simple call checkAllCollisionsWith on every circle via a list comprehension.
-    However, we're going to have to change that when tackling our next challenge:  making things disappear when hit.</p>
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/jeffreybiles/2vNsz/114/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>The basic stuff first:  we added back in the Enemy subclass and the enemyFactory.  We create a bunch of enemies.  However, if we just left it like that,
+    the enemies would run into each other and be destroyed almost instantaneously.  What we do to circumvent that self-destructive outcome is
+    add a boolean to the enemy called isEnemy, and set it to true.  Then, when we're checking if two circles are colliding, we make sure
+    that one of them is not an enemy.  (In case you're wondering, no, the other subclasses don't have an isEnemy property.  That in itself means that when it is called on them,
+    they return null or undefined, doing our work for us)</p>
 
+<h2>Boom</h2>
+  <p>We have a game.  <i>We have a game!</i>
+    <p>Play it.
+  <p>Caress it.
+  <p>Weep with joy.</p>
+  <p>However, it's still a game only a creator could love.  In the section 5, we'll do a series of tweaks that will make it <b>fun</b>!</p>
 
-
-  The second will be adding back in enemies with the complication that two enemies colliding should not be a problem.
-  //collision detection revamped
-  //how to remove something that has collided
-  //add in enemies again
 </div>

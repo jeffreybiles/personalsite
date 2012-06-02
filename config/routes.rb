@@ -5,6 +5,7 @@ Personalsite::Application.routes.draw do
   match '/resumes' => 'high_voltage/pages#show', as: :static, id: 'resume'
   #resources :contacts
   #match '/contact', to: 'contacts#new'
+  match '/contact' => 'high_voltage/pages#show', as: :static, id: 'contact'
 
 
   #games
