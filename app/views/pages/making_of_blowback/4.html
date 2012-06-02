@@ -42,7 +42,39 @@
   <p><i>PS:  Are you looking for bonus points?  The bullets were black last time.  Tell me why they're red now.</i></p>
 
 <h2>Shoe Tim Up</h2>
-  This is the final push until we have a working game!  Granted, it's not a very <i>good</i> game yet, but that's what part 5 will be for.
+  <p>This is the final push until we have a working game!  Granted, it's not a very <i>good</i> game yet, but that's what part 5 will be for.
+  We'll split implementing the collision detection into multiple steps;  first, we'll deal with the player and the bullets.  Then we'll add
+  enemies into the mix.
+  <p>You might remember that last time we did collision detection, we simply checked if anything was hitting the player.
+    However, since we now need to check player vs bullet, bullet vs bullet, and later bullet vs enemy and enemy vs player (but not enemy vs enemy),
+    we'll need to do something different.  And since this time we'll need both of the colliders to disappear, we'll have to do a bit of complicated coding.
+  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/jeffreybiles/2vNsz/112/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <p>We're going to go through every single circle and see if it's collided with any other circle.  We can't use a list comprehension here,
+    because when two circles collide they must both disappear.  List comprehensions work on the assumption that the action taken in one part
+    of the list won't affect the other parts of the list.  Our fancy time-saving functions aren't good for this situation, so we'll fall back
+    on an old-fashioned while-loop.</p>
+  <p>We're going to set the counter(i) to 0 then slowly count up through the list until we get to the end.  The trick we pull is that we only
+    count up if that circle didn't collide with anything.  If it did collide, we remove it from the list, along with the circle it collided with.
+    In either case, the loop gets closer to completion, and we don't have to worry about parts of our list slipping through the cracks.</p>
+  <p>To tell if a circle has collided with anything, we call on checkAllCollisionsWith, which has been completely gutted, reformed, and
+    turned into a standalone function.</p>
+  <p>Our new checkAllCollisionsWith takes two arguments:  an index and a list of circles.  We use the index to find the first circle, then
+    check each remaining circle in the list to see if there is a collision.  If there is, we return the index of the second circle, leading us
+    to then delete both circles.  If not, we end up sending back a null, which will take us through the i++ section of the loop.</p>
+  <p>A few clever things to note:  We always delete the circle returned from checkAllCollisionsWith first, since it will always be later in the list.
+    If we deleted the other circle first, it would shorten the list and end up deleting the wrong second circle.  The other clever thing is that
+    we don't run through every single circle each time we go through checkAllCollisionsWith.  Since the circle it is on has already been checked
+    with all the circles previous, it starts on the next one.  Since this is the most CPU-intensive part of the game, this one step makes
+    our game run roughly twice as fast.</p>
+  <p>Now that we have a proper collision detection system, we add back in the enemies.</p>
+  <!--Okay, make it so that -->
+    <!--It would do us well to move the checkAllCollisionsWith method from Player to Circle.-->
+  <p>Now to check whether any bullets have collided with anything, we simple call checkAllCollisionsWith on every circle via a list comprehension.
+    However, we're going to have to change that when tackling our next challenge:  making things disappear when hit.</p>
+
+
+
+  The second will be adding back in enemies with the complication that two enemies colliding should not be a problem.
   //collision detection revamped
   //how to remove something that has collided
   //add in enemies again

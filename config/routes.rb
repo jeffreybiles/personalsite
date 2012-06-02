@@ -3,8 +3,10 @@ Personalsite::Application.routes.draw do
   match '/games' => 'high_voltage/pages#show', as: :static, id: 'games_index'
   match '/resume' => 'high_voltage/pages#show', as: :static, id: 'resume'
   match '/resumes' => 'high_voltage/pages#show', as: :static, id: 'resume'
-  resources :contacts
-  match '/contact', to: 'contacts#new'
+  #resources :contacts
+  #match '/contact', to: 'contacts#new'
+
+
   #games
   match '/lightseeker' => 'high_voltage/pages#show', as: :static, id: 'lightseeker'
   match '/cat4' => 'high_voltage/pages#show', as: :static, id: 'cat4'
@@ -19,6 +21,7 @@ Personalsite::Application.routes.draw do
   match '/blowback/making_of/1' => 'high_voltage/pages#show', as: :static, id: 'making_of_blowback/1'
   match '/blowback/making_of/2' => 'high_voltage/pages#show', as: :static, id: 'making_of_blowback/2'
   match '/blowback/making_of/3' => 'high_voltage/pages#show', as: :static, id: 'making_of_blowback/3'
+  match '/blowback/making_of/4' => 'high_voltage/pages#show', as: :static, id: 'making_of_blowback/4'
 
 
   # The priority is based upon order of creation:
