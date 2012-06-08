@@ -6,13 +6,13 @@
 <h2>Can Vase</h2>
 <p>The first thing we're going to do is set up a basic canvas.  Since this is the internet, and things here are magic,
   I can show you the code and you can play with it right in your browser.</p>
-<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/3/embedded/result,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/3/embedded/result,html,css/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
  <p>Wonderful, yes?  Click on the html tab.  You can see that we created a canvas element.  That is all the html that we'll be doing for a while now.</p>
  <p>Now look in the css file.  See the css file, with its one line?  It's to make the canvas visible.  That's all the css we'll be doing for a while as well.  The rest is coffeescript.</p>
 
 <h2>Sir Kill</h2>
 <p>The game we're going to make has lots and lots of circles, so our first order of business should be learning how to draw one.  This step is more lines of code than I would hope, but it's still not too difficult</p>
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/6/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/6/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>The first line is grabbing the canvas and putting it into a variable.  The second line is telling the canvas
     that we'll be working in 2d.  Everything after that--indeed, all of our interactions with the canvas itself--
     will happen through the context(ctx) variable we just defined.</p>
@@ -25,7 +25,7 @@
 
 <h2>Axe Shun</h2>
   <p>Here we're going to learn about two new subjects:  coffeescript variables and coffeescript functions.
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/26/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/26/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <h3>Very Able</h3>
   <p>Those of you only familiar with javascript are likely terrified by the first two lines, because they look an awful lot like global variables.
     But remember, we're writing in coffeescript, which is like javascript with magical fairy dust on top.  You can learn more about it at the coffeescript web site,
@@ -51,7 +51,7 @@
     Imagine if your computer played videos as fast as it could read them... it would be terrible!  Except for Michael Bay movies, which would be much improved.
     In the movies, we have the concept of a frame, and the computer knows to only play 24 (or 30, or 60, depending on the format) of these frames per second.
     We'll take advantage of this concept, and tell the computer to only run through the loop 60 times every second.</p>
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/25/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/25/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>The way we're doing this here is by calling setTimeout.  This simply tells the browser to wait a certain amount of time, then call a function.
     In this case, it calls the mainLoop function after 1000/60 milliseconds (or, 60 times per second).</p>
   <p>In real life, I use the requestAnimationFrame function, which fulfills the same function as setTimeout but does it better.
@@ -64,14 +64,14 @@
     not a built-in erase function.  That means once you draw something, it stays there by default until you draw over it or manually clear it.</p>
   <p>This isn't great for what is supposed to be a moving object.  To fix this, we'll manually clear everything in a
   rectangle the size of the canvas, essentially giving us a blank slate every frame.</p>
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/39/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/39/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>clearRect does pretty much what you expect it to.  The first two variables are the x and the y position of the upper left corner,
   and the second two are the width and the height.  The closely related function fillRect works in a similar manner.</p>
 
 <h2>Bound Sing</h2>
   <p>The circle moves, but it if you watch it for more than a few seconds, it will disappear off of our canvas.
     It will keep on moving, but you can't see it.  We want to see our circle!  So we'll make it bounce.</p>
-  <iframe style="width: 100%; height: 350px" src="http://jsfiddle.net/2vNsz/40/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/40/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>Our first steps are to variabalize the radius of the circle and the x and y speeds (dx and dy respectively) of our circle.  This lets us call them in multiple
     places and change them at will.  Specifically, in this case, we will use the radius of the circle in multiple places to tell when to bounce,
   and we'll use dx and dy to change the direction of the circle once it hits the wall.</p>

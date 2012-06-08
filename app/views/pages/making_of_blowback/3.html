@@ -2,7 +2,7 @@
 <a href="/blowback/making_of/2">(last session)</a>
 <h1>I LIKE TO MOVE IT MOVE IT</h1>
 <p>Let's get started right away.  And to facilitate that, we're going to take part of our code temporarily back to the dark ages (aka, no list comprehensions).</p>
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/69/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/69/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 <p>First, click on the screen so that it will pick up your commands.  Then, press and hold one of the arrow keys.  Or many of them at once.</p>
 <p>You see that?  That's the first step on the way to making our game interactive.</p>
 <p>You'll notice that a <b>lot</b> of code has been added.  The good news is that this code can be used practically verbatim
@@ -20,12 +20,12 @@
 
 <h2>Play York Lass</h2>
   <p>What we want now is to be able to control one circle but have the rest bouncing around randomly.  The first attempt we'll make will work, but is incredibly naive:
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/77/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/77/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>We made two classes:  Circle (using our code from part 2) and Player(using our code from just now).  This works, but you'll notice that
   the 'move' and 'draw' functions are <i>exactly the same</i>.  That's because Player is a special type of Circle.</p>
   <p>In coffeescript (and other object-oriented languages) there is a the concept of a "subclass".  Basically, you take the functionality
   of one class and change it.  Here's the same thing, but with Player existing as a subclass of Circle.</p>
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/76/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/76/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>You'll notice that Player only has functions for 'constructor' and 'update'.  That's because, as we said before, 'draw' and 'move' are exactly
   the same for Player and Circle.  If the computer doesn't find a function in the subclass (Player) it will look for it in the superclass (Circle).
   You just saved lots of code!  It gets even better when you have multiple subclasses, and in case you're wondering, we will eventually have
@@ -34,7 +34,7 @@
 <h2>Cull Her, Soup Her</h2>
   <p>In case you were wondering, <b>no</b>, we haven't fully explored the power of classes yet.  We want to have players
     and enemies be different colors, and to do that we will use a tool called 'super'.</p>
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/86/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/86/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>The first thing you'll notice is that we made a subclass called Enemy.  From now on, we won't be making any plain circles.  Circle is just something
   that describes what all circles have in common.  To underscore this, I took out the constructor method from Circle.</p>
   <p>The second difference is that Circle and both of the subclasses have a method called draw.  If both of the subclasses
@@ -48,7 +48,7 @@
     you can pass through them just like ghosts!  We need something called 'collision detection', which will tell us when two
     objects have collided.  However, we don't want enemies destroying each other, and we don't want each object destroying itself,
     so we'll need to be smart about it.  However, being smart doesn't mean we can't throw together a few temporary hacks to get us started.</p>
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/93/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/93/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>We've written two very respectable functions, findDistance and hasCollidedWith (the second of which is attached to the Circle class),
     and we'll discuss them more in a bit.  The hack is in the main loop, where we call the hasCollidedWith function.  The hack part is that
     we're assuming that we will only have two circles, one of which is the player.  We'll fix this later, of course.</p>
@@ -67,7 +67,7 @@
 
 <h2>Sir Rounded</h2>
   <p>Because of one of the hacks used to get the example up and running quickly, it's currently impossible to have more than one enemy.  Let's fix that.
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/100/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/100/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>Here's what we did:  first, we reinstated circleFactory as enemyFactory.  Then, we called it with eight circles, and added our player to the end of circles as well.
   However, we also kept player around in a variable so that we can call methods specifically on it.  We do that in the main loop, calling our new method
   'checkAllCollisionsWith', which takes a list of circles and calls hasCollidedWith for each one of them.

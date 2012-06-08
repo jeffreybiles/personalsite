@@ -1,13 +1,13 @@
 <div class="writing_container">
 <h1>BULL EATS</h1>
   <p>At the end of our <a href="/blowback/making_of/3">last session</a> we had a bunch of enemies bouncing around, and our player simply doing its best to avoid getting in their way.
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/100/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/100/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>It's time to fight back.  In this session, we'll give our player bullets.  Or, if violence makes you squeamish, shootable hugs.
 
 <h2>That's Mice</h2>
   <p>The end goal is to have the player click on any point on the screen and for a bullet to fly from their circle to that point and beyond.
   The first step is figuring out where a player clicked.</p>
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/102/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/102/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>Go ahead and click on the canvas, then check out the javascript.  We'll walk through it step by step.
   <p>$(document).mousedown sets a trigger, so that anytime we click on the screen it will call the function in the parentheses right afterwards.
     You'll notice that we give it the name of a function, but we don't include the parentheses.  If we included the parentheses, we would call the function immediately.
@@ -18,14 +18,14 @@
     Next, we'll use them to place bullets.</p>
 
 <h2>Plays Mint</h2>
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/103/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/103/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>I've added back the Circle class and created a Bullet subclass.  The only thing novel about this is that now, instead of
     popping an alert every time we click, we place a bullet at that location.
   <p>Next we'll use trigonometry to figure out how to make our bullets move.</p>
 
 <h2>Trigger No My Tree</h2>
   <p>By the end we'll want to have the bullets originate at the player, but for now we'll have them originate from the center (200, 150).</p>
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/105/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/105/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>Click around.  Notice that the bullets inherited the bounce-off-walls behaviour from Circle.  That might not always be
     what we want for bullets, but in this case it is, so we will leave that unchanged.</p>
   <p>To make this work, we reinstated the circles list and the loop.  We also made it so that when the mouse is clicked,
@@ -36,7 +36,7 @@
     probably require a surprising amount.  However, that is beyond the scope of this tutorial, and those interested can go
     <a href="http://www.khanacademy.org/math/trigonometry">here</a>.</p>
   <p>Now that we've hand-waved away lots of math, we'll dump back in a bunch of code and hand-wave even more math.</p>
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/2vNsz/109/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/109/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>We've got the player again, and bullets come from it!  We simple pull in information from the player when we're creating the bullet, then do
   some fancy trig to make sure that it appears on the correct side of the player.  This will be important for the next step, when we add back in collision detection.</p>
   <p><i>PS:  Are you looking for bonus points?  The bullets were black last time.  Tell me why they're red now.</i></p>
@@ -48,7 +48,7 @@
   <p>You might remember that last time we did collision detection, we simply checked if anything was hitting the player.
     However, since we now need to check player vs bullet, bullet vs bullet, and later bullet vs enemy and enemy vs player (but not enemy vs enemy),
     we'll need to do something different.  And since this time we'll need both of the colliders to disappear, we'll have to do a bit of complicated coding.
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/jeffreybiles/2vNsz/112/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/jeffreybiles/2vNsz/112/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>We're going to go through every single circle and see if it's collided with any other circle.  We can't use a list comprehension here,
     because when two circles collide they must both disappear.  List comprehensions work on the assumption that the action taken in one part
     of the list won't affect the other parts of the list.  Our fancy time-saving functions aren't good for this situation, so we'll fall back
@@ -67,7 +67,7 @@
     with all the circles previous, it starts on the next one.  Since this is the most CPU-intensive part of the game, this one step makes
     our game run roughly twice as fast.</p>
   <p>Now that we have a proper collision detection system, we add back in the enemies.</p>
-  <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/jeffreybiles/2vNsz/114/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/jeffreybiles/2vNsz/114/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>The basic stuff first:  we added back in the Enemy subclass and the enemyFactory.  We create a bunch of enemies.  However, if we just left it like that,
     the enemies would run into each other and be destroyed almost instantaneously.  What we do to circumvent that self-destructive outcome is
     add a boolean to the enemy called isEnemy, and set it to true.  Then, when we're checking if two circles are colliding, we make sure
