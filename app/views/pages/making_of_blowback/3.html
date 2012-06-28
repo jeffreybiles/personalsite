@@ -48,7 +48,7 @@
     you can pass through them just like ghosts!  We need something called 'collision detection', which will tell us when two
     objects have collided.  However, we don't want enemies destroying each other, and we don't want each object destroying itself,
     so we'll need to be smart about it.  However, being smart doesn't mean we can't throw together a few temporary hacks to get us started.</p>
-  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/93/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/123/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>We've written two very respectable functions, findDistance and hasCollidedWith (the second of which is attached to the Circle class),
     and we'll discuss them more in a bit.  The hack is in the main loop, where we call the hasCollidedWith function.  The hack part is that
     we're assuming that we will only have two circles, one of which is the player.  We'll fix this later, of course.</p>
@@ -67,7 +67,7 @@
 
 <h2>Sir Rounded</h2>
   <p>Because of one of the hacks used to get the example up and running quickly, it's currently impossible to have more than one enemy.  Let's fix that.
-  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/100/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+  <iframe style="width: 100%; height: 370px" src="http://jsfiddle.net/2vNsz/125/embedded/js,result" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   <p>Here's what we did:  first, we reinstated circleFactory as enemyFactory.  Then, we called it with eight circles, and added our player to the end of circles as well.
   However, we also kept player around in a variable so that we can call methods specifically on it.  We do that in the main loop, calling our new method
   'checkAllCollisionsWith', which takes a list of circles and calls hasCollidedWith for each one of them.
