@@ -1,0 +1,46 @@
+<div class="writing_container">
+    <h1>Shy Knee</h1>
+    <p>Alright, <a href="http://jeffreybiles.com/blowback/making_of/4">last time</a> we came up with a real, working game, but it was a little rough.  </p>
+    <p>114</p>
+    <p>Now let's shine it.</p>
+
+    <h3>Whirred</h3>
+    <p>The first issue we';re going to fix is the listless, pointless, nihilistic nature of the game thus far.  Why are we shooting things?  What is the point?  Is there a god?</p>
+    <p>The answer to all three questions is:  a scoring system.  We want the player to be rewarded for shooting things, like a good stormtrooper.  To do that, we will need a way to display text.</p>
+    <p>127</p>
+    <p>The magic sauce in our function is the fillText() function, which does the work which we are looking for.  Everything else with regards to the canvas is just preparation, and fairly obvious.  However, there are two new coffeescript tricks introduced here.</p>
+    <p>The first is the default parameter value.  You';ll notice that we have six parameters in our function, but when we call it we only give three.  In addition, the last three parameters have an equals sign and then a value to the right.  That means that if the value isn';t specified when the function is called, it will use the value to the right of the equals sign.  One tricky thing to note is that you can';t specify the sixth parameter but not the fourth, so ordering your parameters wisely, as well as setting sensible defaults, is an important part of making your software reusable.</p>
+    <p>The second coffeescript trick is how we use a value inside of a quote, like this:  "bold #{size}px #{style}".  What';s happening is that we are inserting variables into the string.  In regular javascript, it would look like this:  "bold " + size + "px " + style;  It';s not terrible, but the first is much more readable.</p>
+
+    <h3>Ska Oar</h3>
+    <p>Let';s take that text function and put it into our game.  </p>
+    <p>134</p>
+    <p>Another small update, in which we simply transplant the function, then call it every time we go through the main loop, so that the score always stays up to date.  You';ll notice that we set the score to 0 at the beginning, and then we update it whenever there is a collision in which one of the collided parties is an enemy and one is something else. </p>
+    <p>Three lines to turn a simple text function into a score-keeping mechanism.  Hooray for efficiency.</p>
+
+    <h3>Dye Ying</h3>
+    <p>We have the carrot of the game, now for the stick.  When the player is hit, we want bad things to occur.  Specifically, we';re going to restart the current level (well, when we add levels.  For now it';s just restarting the game) and cut the player';s score in half.  This is a lot of code to make this happen, so we';ll go ahead and do a small refactoring to start with.</p>
+    <p>161</p>
+    <p>Here, we took all the stuff that happens at the start of a game (creating the player and enemies) and put it inside a function called startGame().  However, it wasn';t just a verbatim copy;  there were a few small but very important changes made so that it can still work.</p>
+    <p>The first has to do with scope.  Basically, everything that isn';t in a function is in the global scope, which means we can access it from anywhere in the program. (yes, global scope is usually bad.  It';s slightly less bad in games, especially for things like the score and the main objects).  However, when we move the player creating line into the startGame function, it is no longer in global scope.  Many of our other functions rely on being able to access player, so this is not good!  However, if we try to create a player at the top, we haven';t declared the Player class yet (caring about declaration order is one of the dangers of not putting things in functions), so it will give us an error.   We can declare it in the middle of the program, sometime after the Player class is declared, but that hides the code in a place that another developer won';t expect it.  Thus, we have the strange declaration of player = 0 at the top.  It';s simply declaring that there is something called player in the global scope.  This is probably the worst line in the entire program.</p>
+    <p>The second thing is a bit easier to explain (mostly because there isn';t a tangle of conflicting best practice compromises).  Simply, we declare at the beginning of startGame that circles is an empty array.  It';s repetitive for now (it was already declared at the top), but when we want to start the game again we don';t want to have to deal with all the old players and enemies.  Setting it as an empty array clears it out.</p>
+    <p>Now, finally, we';re ready to kill our player.</p>
+    <p>162</p>
+    <p>The basics of how we do this are:  detect when the player has died, then call startGame() instead of continuing to call mainLoop().  The details, of course, are not so easy.</p>
+    <p>First, detecting that the player has died.  We know this will occur somewhere in our checkAllCollisionsWith function, and we can take some guidance from when we previously checked whether both of the colliders were enemies (in which case they would pass right through each other).  In this case, we will check whether either of the colliders are the player.  In order to detect this, we add an isPlayer attribute to the Player class upon initialization, just like we added an isEnemy attribute to the enemy.  Note that if the class system was a real class system, instead of something hacked together from javascript';s prototype system and made to look nice, we could simply check the class of the object.  However, this is a suitable workaround.</p>
+    <p>Second, and trickier, is restarting the game now that the player has died.  The simple approach - calling startGame() right after the if statement detects that the player has collided - has a nasty tendency to freeze the game.  So we';ll do something else!</p>
+    <p>The simplest working option, since there is only one player at any given time, is to attach an attribute to named ';alive';.  This will be initialized to true, then set to false when the player collides with anything.  During the main loop we will check the alive attribute, and if it is true we will continue on our way and call mainLoop again.  If it is false, we call startGame.</p>
+    <p>And now we have put the fear of death into our players.  Invigorating!</p>
+
+    <h3>Harder Better Same Speed Same Strength</h3>
+    <p>We want to make the game slowly get harder.  To do that, we';re going to add the concept of "levels".  If you beat level 1 by killing all the enemies, you get to play level 2... which is the same, but there are now more enemies!  This isn';t the best way to scale difficulty, but it will do for now.</p>
+    <p>Our first step to creating levels is being able to detect when all the enemies are dead.  We';re going to do that now, but when they';re all gone we';ll simply restart the game.</p>
+    <p>165</p>
+    <p>We made a straightforward function which returns the number of enemies.  We then take the result and display it in the lower left hand corner, as well as using it to determine whether to restart the level.  Nothing fancy here, but you need to be sure to use an else if statement (not just two if statements) in the main control loop;  my first attempt was calling startGame AND mainLoop on the same run through the loop, resulting in the speed becoming double (then triple, then quadruple) the intended rate.</p>
+    <p>Now, levels.</p>
+    <p>165</p>
+    <p>We set a global variable of level to be equal to 1, then we increment it every time all the enemies are destroyed.  Then we change the input to enemyFactory to be the square of the level (so we get 1, 4, 9, 16, etc enemies spawned).</p>
+    <p>Notice how easy it is to add features now that we have the groundwork covered?  Once I had this basic framework covered, I was able to crank out an entirely new game within a day.  I made four games based on this framework, and the last took three hours.</p>
+    <p>So basically, now is the fun part.  The part where you get to tweak the variables, add effects, do whatever you want to make the game your own.  <a href="http://jeffreybiles.com/tat">My second iteration</a> on this had the enemies shooting back whenever you shot.  <a href="http://jeffreybiles.com/vengeance">My third</a> had them start chasing you as you killed their brethren.  <a href="http://jeffreybiles.com/sectarian">The last</a> combined all three gimmicks (the bouncing bullets, the shooting back, and the vengeance-seeking) into a game that';s way more fun and dynamic than any of the previous ones.</p>
+    <p>So go, explore, rejoice.
+</div>
