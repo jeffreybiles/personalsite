@@ -14,3 +14,4 @@ jQuery ->
     $('#buzzword_resume').fadeIn(700);
 
   $('#resumes').children().hide();
+  $('#buzzword_resume').show();
