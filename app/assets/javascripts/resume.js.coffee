@@ -1,21 +1,21 @@
 jQuery ->
-  $('#resume_switcher #ten').click ->
+  $('#resume_switcher #2010').click ->
     $('#resumes').children().hide();
-    $('#ten').fadeIn(700);
+    $('#2010Resume').fadeIn(700);
 
 
-  $('#resume_switcher #eleven').click ->
+  $('#resume_switcher #2011').click ->
     $('#resumes').children().hide();
-    $('#eleven').fadeIn(700);
+    $('#2011Resume').fadeIn(700);
 
 
-  $('#resume_switcher #twelve').click ->
+  $('#resume_switcher #2012').click ->
     $('#resumes').children().hide();
-    $('#twelve').fadeIn(700);
+    $('#2012Resume').fadeIn(700);
 
   $('#resume_switcher #buzzword').click ->
     $('#resumes').children().hide();
-    $('#buzzword_resume').fadeIn(700);
+    $('#buzzwordResume').fadeIn(700);
 
   $('#resumes').children().hide();
-  $('#twelve').show();
+  $('#2012Resume').show();
