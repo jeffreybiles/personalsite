@@ -13,6 +13,10 @@ jQuery ->
     $('#resumes').children().hide();
     $('#2012Resume').fadeIn(700);
 
+  $('#resume_switcher #2013').click ->
+    $('#resumes').children().hide();
+    $('#2013Resume').fadeIn(700);
+
   $('#resume_switcher #buzzword').click ->
     $('#resumes').children().hide();
     $('#buzzwordResume').fadeIn(700);
