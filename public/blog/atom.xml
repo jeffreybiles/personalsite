@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>BLOG_NAME</title>
+ <link href="YOUR_URL/atom.xml" rel="self"/>
+ <link href="YOUR_URL"/>
+ <updated>2013-06-30T04:12:32-05:00</updated>
+ <id>BLOG_URL</id>
+ <author>
+   <name>BLOG_NAME</name>
+ </author>
+
+ 
+ <entry>
+   <title>Dear NSA</title>
+   <link href="YOUR_URL/dear-nsa.html"/>
+   <updated>2013-06-07T00:00:00-05:00</updated>
+   <id>BLOG_URL/dear-nsa</id>
+   <content type="html">&lt;p&gt;Dear NSA,&lt;/p&gt;
+
+&lt;p&gt;Attached you will find my application for the position of American Watcher.
+I have been an American Watcher for most of my life, although you cannot find it on my resume since, like you, I have been very secretive.
+My ex-wife didn&#39;t know I was tracking her through her phone for the entire three months of our marriage, until some goddam whistleblower made her aware of my security efforts.  I am sure this rogue actor is some sort of terrorist.  Not only has he dared to speak about my security apparatus, but he is in league with at least one woman, my ex-wife, who has terrorized my heart and devastated my homeland.
+More recently, I have been conducting surveillance on the neighborhood teenage girls.  While their terroristic tendencies have not been fully revealed, this should not stop me at all.  Why should they mind that I watch them, as long as they have nothing to hide.  Nothing to hide behind those frilly, foreign-made panties.
+Silencing dissent and intimidating peaceful protesters is just the tip of the iceberg when it comes to how we can use your technology.  Just let me in, and I&#39;ll make sure your technology gets used to the climax of its potential.
+You don&#39;t even have to pay me.&lt;/p&gt;
+
+&lt;p&gt;--Tom&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mere Exposure, your community's best tool</title>
+   <link href="YOUR_URL/mere-exposure.html"/>
+   <updated>2013-03-04T00:00:00-06:00</updated>
+   <id>BLOG_URL/mere-exposure</id>
+   <content type="html">&lt;p&gt;The familiar is comforting.  Fact.  Popularized by Robert B. Zajonc, social psychologist, in 1960s.&lt;/p&gt;
+
+&lt;p&gt;In one experiment, he even showed that you can be made to like chinese symbols you don’t understand just by looking at them a few times.  Here’s how that went down.&lt;/p&gt;
+
+&lt;h2&gt;Seeing is liking&lt;/h2&gt;
+
+&lt;p&gt;He took 12 chinese symbols, and started showing them to the subjects.  An “exposure” was two seconds of passively looking at the symbol, and the subject was exposed to each symbols somewhere between 0 and 25 times.  Then, Zajonc asked them to rate how positive the meaning  of that word was.  It turns out, the more you are exposed to a meaningless symbol, the more you like it.&lt;/p&gt;
+
+&lt;h2&gt;Unless you hate it already&lt;/h2&gt;
+
+&lt;p&gt;Of course, there are caveats to this.  If you initially dislike the target, repeated exposure will cause you to dislike it even more.  Additionally, when the subjects are told that the symbols they are about to see have negative connotations in Chinese, the graph resembles an upside-down U; 0 and 25 have the worst ratings, with the best somewhere in the middle.  Finally, an extreme number of exposures (around 200 over the course of the experiment) will make subjects dislike the neutral stimuli (lost the citation, sorry).&lt;/p&gt;
+
+&lt;h2&gt;How to like your neighbors&lt;/h2&gt;
+
+&lt;h3&gt;1.  To like your neighbor, you must first see them.&lt;/h3&gt;
+
+&lt;p&gt;This is rule number one of the mere exposure principle.  Within reasonable bounds, more exposure means more liking.  Thus, a good urban design means that you should run into the same person multiple times a week, by accident.  The more people that happens with, the more people you will show positive affect (liking) towards.&lt;/p&gt;
+
+&lt;p&gt;There are benefits to this that stretch beyond mere exposure (reducing the perceived cost and increasing the perceived benefit of creating a social bond), but those are for another post.&lt;/p&gt;
+
+&lt;h3&gt;2.  You can’t start off hating them&lt;/h3&gt;
+
+&lt;p&gt;If you first question about someone is which political party they’re affiliated with, then your chances of liking your neighbor plummet.  However, as we get people out of their isolation, talking to people more than listening to fear mongers the news, this problem will become less of an issue.&lt;/p&gt;
+
+&lt;h3&gt;3.  You can’t see them too much&lt;/h3&gt;
+
+&lt;p&gt;If you’re stuck in the same house with someone all day, then they become like the chinese symbol you’ve seen 200 times… annoying.  A good urban design will make you run into a medium number of people a medium amount, not a small number of people a large amount.  This had the added benefit of giving you choice about with whom you create your social bonds.&lt;/p&gt;
+
+&lt;h2&gt;Specifics please&lt;/h2&gt;
+
+&lt;p&gt;How exactly should you create this environment?  My best bet is on an Urban Retreat.  You can find a primer at the end of this article, but there are more details on the way.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Communi-tease</title>
+   <link href="YOUR_URL/communitease.html"/>
+   <updated>2013-03-02T00:00:00-06:00</updated>
+   <id>BLOG_URL/communitease</id>
+   <content type="html">&lt;p&gt;Life in America is a dysfunctional farce.&lt;/p&gt;
+
+&lt;p&gt;Let me explain.&lt;/p&gt;
+
+&lt;p&gt;I’m not talking about any of the normal ghosts that haunt our national psyche (obesity, gun violence, health care costs, hyper-partisanship, sexism/racism/otherisms, fossil fuel consumption, the underfunded educational system, the overfilled prison system, the growing police state, etc.).  Those are bad, but I can ignore them most of the time.  What really makes life in America such a killjoy (and causes a significant number of the previously mentioned symptoms) is the incredible difficulty of forming a community.&lt;/p&gt;
+
+&lt;p&gt;What are the communities you can join and why don’t they work?  This post is a discussion of seven common community arrangements: what they’re good at, and where they fall short.  Enjoy.&lt;/p&gt;
+
+&lt;h2&gt;1. The urban center&lt;/h2&gt;
+
+&lt;p&gt;The city has lots of everything.  Lots of people, lots of shops, lots of jobs, lots of places to get together to eat or play.  A shocking number of opportunities are close by, and because of the high density and mixed zoning of the urban center (and better-than-average public transport) a lot of those are within walking distance.  You can do more things, be more active, make more money, and have more friends… all without strapping on a seatbelt.&lt;/p&gt;
+
+&lt;p&gt;However, the city can also be a very lonely place.  The sheer number of people means that nearly everyone you meet will be a stranger.  This one fact brings on a deluge of bad consequences, all stemming from a mixture of anonymity and empathy fatigue.&lt;/p&gt;
+
+&lt;p&gt;Quick quiz:  a)  how many times did you smile at a stranger? b) how difficult is it to turn a stranger you meet on the street into a friend?&lt;/p&gt;
+
+&lt;p&gt;Unless you are exceptionally outgoing, your answers should provide all you need to understand how being surrounded by people can be an isolating experience.  Creating relationships requires repeated interaction, something you’re simply not going to get in the big city as a whole.  Even if you walk past the same person on the street five times, you will not interact with them because they are simply part of a nameless faceless mass of people that, for sanity reasons, you cannot personify.  There may be smaller communities within the city that provide that, but the city itself fails as a provider of new relationships.&lt;/p&gt;
+
+&lt;h2&gt;2.  The workplace&lt;/h2&gt;
+
+&lt;p&gt;The workplace often doubles as a social hub.  It does this not because it’s the optimal setup for healthy relationships, but because you’re stuck there for eight hours a day and it’s better than many of the other options.&lt;/p&gt;
+
+&lt;p&gt;The workplace does provide many of the things needed for quality relationships to form, the most obvious of which is repeated exposure.  You see the same people in the office every day, and so that leads to good feelings towards them (real psychological effect), and so that leads to interaction, which leads to more good feelings, which leads to more interaction, and so on and so forth.  There is also the shared interest in getting work done (or avoiding work, depending on which type of office you’re in) which leads to interaction and more (hopefully) positive feelings.&lt;/p&gt;
+
+&lt;p&gt;Despite this one winning attribute of the office environment, it’s all downhill from there.  You have little choice in who you must interact with for a large portion of your day, you cut off relations at a certain time each day, many of the relationships are transparently transactional, there is a strict hierarchy and high-stakes politics, there are several natural progressions of a relationship that are frowned upon, your community can be destroyed by the mistakes of distant outsiders (layoffs), the discontent of a nearby outsider (the boss), or the success of a member (taking a better job).  And did I mention that you rarely get to choose who is in this community?&lt;/p&gt;
+
+&lt;p&gt;In the end, the profit motive is what’s holding together this community, and that is a very fragile bond.&lt;/p&gt;
+
+&lt;h2&gt;3.  The church (and other religious groups)&lt;/h2&gt;
+
+&lt;p&gt;The church does a lot of things right.  It’s a group of people that choose to come together for the specific purpose of building a supportive community, bound by a common and eternal goal.  Sounds great, right?&lt;/p&gt;
+
+&lt;p&gt;Well, they do a lot of things right, and the church is rightly seen as the cornerstone of community life in certain parts of America.  However, there are some problems.&lt;/p&gt;
+
+&lt;p&gt;The first is the logistical error of only seeing this group of people once or twice a week.  You can build a bond through this, but its strength will be limited unless you engage in extracurricular activities.  To their credit, many churches provide this.&lt;/p&gt;
+
+&lt;p&gt;The second, and more damning, is that being part of this group requires strict allegiance to a set of values and beliefs.  The initial exclusion of a large amount of people is not necessarily the problem, since most groups do that already by virtue of their geography-based nature.  The problem springs when someone decides they do not want to adhere to these values and beliefs.  This person then either painfully splits from the community or takes the slow poison of a double life.  It is rare that someone can openly profess beliefs contrary to their church’s core religious doctrine and still be an active member in that community.&lt;/p&gt;
+
+&lt;h2&gt;4.  The internet&lt;/h2&gt;
+
+&lt;p&gt;The internet is building new types of communities.  Suddenly, you can discuss exotic subjects like “metaprogramming in ruby” and “urban farming” with experts from around the world, all without stopping the Ke$ha track you have on repeat (or getting out of your chair).  This creates a plethora of subcommunities no longer based on shared experience or caring, but purely on a sharing of knowledge and development of ideas.&lt;/p&gt;
+
+&lt;p&gt;These communities are valuable, and have catapulted intellectual discourse into the stratosphere, but they are a different type than what is needed.  The low-bandwidth nature of digital communication means that it is difficult (though not impossible) to develop strong emotional bonds and a caring group, and an in-person network will always have an advantage in this arena.&lt;/p&gt;
+
+&lt;p&gt;So we move on to other physical communities…&lt;/p&gt;
+
+&lt;h2&gt;5.  Suburbia&lt;/h2&gt;
+
+&lt;p&gt;The good?  It’s cheap, private, readily available, and the downsides are not readily apparent.  Just like internet porn.&lt;/p&gt;
+
+&lt;p&gt;The bad?  Oh god. Oh god oh god.  Suburbia is TERRIBLE.  The following is a list of posts that I could write about it:&lt;/p&gt;
+
+&lt;p&gt;Bullshit Nature:  a patch of grass is not the woods and you’re not fooling anyone, especially your body.
+Fascimile friends:  facebook likes and television characters as substitutes for real connection.
+The disconnect:  If you have to drive 20 minutes, you probably won’t go.
+Nature abhors a suburbia:  we are ruining the planet for our own unhappiness.
+Rage Road:  Cars are not people, but you’re still not allowed to hit them
+Suburb Body:  This one is big.  And riddled with stress-based diseases.
+Suburbia should die a death that is slower and even more painful than the death it causes us.&lt;/p&gt;
+
+&lt;h2&gt;6.  Residential liberal arts college&lt;/h2&gt;
+
+&lt;p&gt;This does as many things right as suburbia does wrong.  My time at one of these was the happiest I’ve ever been, and is what sparked my interest in how communities are built.&lt;/p&gt;
+
+&lt;p&gt;My campus was 1200 people, small enough that I could recognize most students on sight but large enough that I had choice in who I wanted to spend my time with.  Repeated exposure made creating casual connections both easier and more rewarding.  80% of students lived within a block of the school.  The school itself was an area of about 1500ftx2000ft, with an athletic center across the highway.  Food, exercise, socializing, and studying was all done in that small area, creating an interweaving mesh of social connections.  Here are some blog posts I could write about it:&lt;/p&gt;
+
+&lt;p&gt;In this together: friendship by association in a shared community
+Walk it off:  How college students stay alive and relatively healthy despite the all-nighters and the binge-drinking
+Parks, not parking: the benefits of relegating cars to the sidelines
+Trust Society:  Her laptop was in a public space for 3 days and no one touched it
+Friends everywhere:  How i ate 2-hour meals without getting bored
+The Earth is my Home:  A detailed map of every place on campus I have napped.
+Plans optional (Friends everywhere II): Step out your door, hope for the best.
+However, it’s not all fun and games.  This particular school, and most like it, costs $40k/year to attend.  This is personally unsustainable for the students, leading many into a life of crippling debt (I happened to be good at standardized tests and get a nice scholarship).  In addition, it is societally unsustainable; no one except the professors and a few seniors were producing anything of value to society.  Finally, this particular community was unusually homogenous in age and ability, and the model has not been tested with families and nonacademics.&lt;/p&gt;
+
+&lt;h2&gt;7.  The urban retreat&lt;/h2&gt;
+
+&lt;p&gt;Finally, we have the urban retreat.  Stuck in the middle (or right on the outskirts) of a city, it shares all the amenities that make living in such a place attractive.  However, when you rent a room in an urban retreat, you’re not just buying that space.  You’re also buying 10 meals a week at a cafeteria (or nearby restaurants, depending on which urban retreate you’re a part of) as well as access to athletic facilities, a nurse, shared spaces (both green and indoors) and shared tools and toys.&lt;/p&gt;
+
+&lt;p&gt;By including so much in the package, the members of the urban retreat are able to see enough of each other that friendships form naturally through repeat exposure.  Owners can also offset the cost of all the shared amenities by shrinking the private portions of the living space into just what is needed for sleeping, lovemaking, and a quiet night with a book.&lt;/p&gt;
+
+&lt;p&gt;Finally, unlike the college (which shares many similarities with the urban retreat), this living arrangement is sustainable because members are able to work while being a part of the community.  Those who wish to live there but cannot afford it are sometimes given positions in the maintenance of the facilities.&lt;/p&gt;
+
+&lt;p&gt;The biggest downside to this living arrangement is that it (in my understanding) does not yet exist, and it would require significant capital to start.&lt;/p&gt;
+
+&lt;p&gt;So what do we do now?
+Well, all of our communities suck.  Let’s talk about how to make them suck less.  Or, you could donate large sums of money to me, so that I can start building the first urban retreat.  Either one is good with me.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
