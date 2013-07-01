@@ -4,6 +4,8 @@ published: true
 title: Mere Exposure, your community's best tool
 ---
 
+#Mere Exposure:  Your community's best tool
+
 The familiar is comforting.  Fact.  Popularized by Robert B. Zajonc, social psychologist, in 1960s.
 
 In one experiment, he even showed that you can be made to like chinese symbols you don’t understand just by looking at them a few times.  Here’s how that went down.

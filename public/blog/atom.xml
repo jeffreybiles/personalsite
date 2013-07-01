@@ -4,7 +4,7 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2013-06-30T04:12:32-05:00</updated>
+ <updated>2013-06-30T22:18:18-05:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
@@ -12,18 +12,38 @@
 
  
  <entry>
-   <title>Dear NSA</title>
+   <title>Much Very Confused; Ember for the inappropriately experienced</title>
+   <link href="YOUR_URL/much-very-confused.html"/>
+   <updated>2013-06-30T00:00:00-05:00</updated>
+   <id>BLOG_URL/much-very-confused</id>
+   <content type="html">&lt;h1&gt;Much Very Confused:  Ember for the inappropriately experienced&lt;/h1&gt;
+
+&lt;p&gt;Our preconceived notions of MVC can prevent us from understanding and taking full advantage of a framework such as Ember.  I propose a better way to transfer knowledge from one framework to another.&lt;/p&gt;
+
+&lt;p&gt;This is the screencast version of a talk I gave at the June EmberATX meetup.&lt;/p&gt;
+
+&lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;//www.youtube.com/embed/DVwzN6kTc1c&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>An Application to the NSA's counter-terrorism division</title>
    <link href="YOUR_URL/dear-nsa.html"/>
    <updated>2013-06-07T00:00:00-05:00</updated>
    <id>BLOG_URL/dear-nsa</id>
    <content type="html">&lt;p&gt;Dear NSA,&lt;/p&gt;
 
 &lt;p&gt;Attached you will find my application for the position of American Watcher.
-I have been an American Watcher for most of my life, although you cannot find it on my resume since, like you, I have been very secretive.
-My ex-wife didn&#39;t know I was tracking her through her phone for the entire three months of our marriage, until some goddam whistleblower made her aware of my security efforts.  I am sure this rogue actor is some sort of terrorist.  Not only has he dared to speak about my security apparatus, but he is in league with at least one woman, my ex-wife, who has terrorized my heart and devastated my homeland.
-More recently, I have been conducting surveillance on the neighborhood teenage girls.  While their terroristic tendencies have not been fully revealed, this should not stop me at all.  Why should they mind that I watch them, as long as they have nothing to hide.  Nothing to hide behind those frilly, foreign-made panties.
-Silencing dissent and intimidating peaceful protesters is just the tip of the iceberg when it comes to how we can use your technology.  Just let me in, and I&#39;ll make sure your technology gets used to the climax of its potential.
-You don&#39;t even have to pay me.&lt;/p&gt;
+I have been an American Watcher for most of my life, although you cannot find it on my resume since, like you, I have been very secretive.&lt;/p&gt;
+
+&lt;p&gt;My ex-wife didn&#39;t know I was tracking her through her phone for the entire three months of our marriage, until some goddam whistleblower made her aware of my security efforts.  I am sure this rogue actor is some sort of terrorist.  Not only has he dared to speak about my security apparatus, but he is in league with at least one woman, my ex-wife, who has terrorized my heart and devastated my homeland.&lt;/p&gt;
+
+&lt;p&gt;More recently, I have been conducting surveillance on the neighborhood teenage girls.  While their terroristic tendencies have not been fully revealed, this should not stop me at all.  Why should they mind that I watch them, as long as they have nothing to hide.  Nothing to hide behind those frilly, foreign-made panties.&lt;/p&gt;
+
+&lt;p&gt;Silencing dissent and intimidating peaceful protesters is just the tip of the iceberg when it comes to how we can use your technology.  Just let me in, and I&#39;ll make sure your technology gets used to the climax of its potential.&lt;/p&gt;
+
+&lt;p&gt;You don&#39;t even have to pay me.&lt;/p&gt;
 
 &lt;p&gt;--Tom&lt;/p&gt;
 </content>
@@ -34,7 +54,9 @@ You don&#39;t even have to pay me.&lt;/p&gt;
    <link href="YOUR_URL/mere-exposure.html"/>
    <updated>2013-03-04T00:00:00-06:00</updated>
    <id>BLOG_URL/mere-exposure</id>
-   <content type="html">&lt;p&gt;The familiar is comforting.  Fact.  Popularized by Robert B. Zajonc, social psychologist, in 1960s.&lt;/p&gt;
+   <content type="html">&lt;h1&gt;Mere Exposure:  Your community&#39;s best tool&lt;/h1&gt;
+
+&lt;p&gt;The familiar is comforting.  Fact.  Popularized by Robert B. Zajonc, social psychologist, in 1960s.&lt;/p&gt;
 
 &lt;p&gt;In one experiment, he even showed that you can be made to like chinese symbols you don’t understand just by looking at them a few times.  Here’s how that went down.&lt;/p&gt;
 
@@ -73,7 +95,9 @@ You don&#39;t even have to pay me.&lt;/p&gt;
    <link href="YOUR_URL/communitease.html"/>
    <updated>2013-03-02T00:00:00-06:00</updated>
    <id>BLOG_URL/communitease</id>
-   <content type="html">&lt;p&gt;Life in America is a dysfunctional farce.&lt;/p&gt;
+   <content type="html">&lt;h1&gt;Communi-tease&lt;/h1&gt;
+
+&lt;p&gt;Life in America is, in most cities, suburbs, and rural areas, systemically dysfunctional.&lt;/p&gt;
 
 &lt;p&gt;Let me explain.&lt;/p&gt;
 
@@ -125,13 +149,14 @@ You don&#39;t even have to pay me.&lt;/p&gt;
 
 &lt;p&gt;The bad?  Oh god. Oh god oh god.  Suburbia is TERRIBLE.  The following is a list of posts that I could write about it:&lt;/p&gt;
 
-&lt;p&gt;Bullshit Nature:  a patch of grass is not the woods and you’re not fooling anyone, especially your body.
-Fascimile friends:  facebook likes and television characters as substitutes for real connection.
-The disconnect:  If you have to drive 20 minutes, you probably won’t go.
-Nature abhors a suburbia:  we are ruining the planet for our own unhappiness.
-Rage Road:  Cars are not people, but you’re still not allowed to hit them
-Suburb Body:  This one is big.  And riddled with stress-based diseases.
-Suburbia should die a death that is slower and even more painful than the death it causes us.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Bullshit Nature:  a patch of grass is not the woods and you’re not fooling anyone, especially your body.
+&lt;/em&gt;Fascimile friends:  facebook likes and television characters as substitutes for real connection.
+&lt;em&gt;The disconnect:  If you have to drive 20 minutes, you probably won’t go.
+&lt;/em&gt;Nature abhors a suburbia:  we are ruining the planet for our own unhappiness.
+&lt;em&gt;Rage Road:  Cars are not people, but you’re still not allowed to hit them
+&lt;/em&gt;Suburb Body:  This one is big.  And riddled with stress-based diseases.&lt;/p&gt;
+
+&lt;p&gt;I would wish a slow painful death for Suburbia, but the slow part means we&#39;d have to live with it longer.  So I merely wish it death.&lt;/p&gt;
 
 &lt;h2&gt;6.  Residential liberal arts college&lt;/h2&gt;
 
@@ -139,14 +164,15 @@ Suburbia should die a death that is slower and even more painful than the death 
 
 &lt;p&gt;My campus was 1200 people, small enough that I could recognize most students on sight but large enough that I had choice in who I wanted to spend my time with.  Repeated exposure made creating casual connections both easier and more rewarding.  80% of students lived within a block of the school.  The school itself was an area of about 1500ftx2000ft, with an athletic center across the highway.  Food, exercise, socializing, and studying was all done in that small area, creating an interweaving mesh of social connections.  Here are some blog posts I could write about it:&lt;/p&gt;
 
-&lt;p&gt;In this together: friendship by association in a shared community
-Walk it off:  How college students stay alive and relatively healthy despite the all-nighters and the binge-drinking
-Parks, not parking: the benefits of relegating cars to the sidelines
-Trust Society:  Her laptop was in a public space for 3 days and no one touched it
-Friends everywhere:  How i ate 2-hour meals without getting bored
-The Earth is my Home:  A detailed map of every place on campus I have napped.
-Plans optional (Friends everywhere II): Step out your door, hope for the best.
-However, it’s not all fun and games.  This particular school, and most like it, costs $40k/year to attend.  This is personally unsustainable for the students, leading many into a life of crippling debt (I happened to be good at standardized tests and get a nice scholarship).  In addition, it is societally unsustainable; no one except the professors and a few seniors were producing anything of value to society.  Finally, this particular community was unusually homogenous in age and ability, and the model has not been tested with families and nonacademics.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;In this together: friendship by association in a shared community
+&lt;/em&gt;Walk it off:  How college students stay alive and relatively healthy despite the all-nighters and the binge-drinking
+&lt;em&gt;Parks, not parking: the benefits of relegating cars to the sidelines
+&lt;/em&gt;Trust Society:  Her laptop was in a public space for 3 days and no one touched it
+&lt;em&gt;Friends everywhere:  How i ate 2-hour meals without getting bored
+&lt;/em&gt;The Earth is my Home:  A detailed map of every place on campus I have napped.
+*Plans optional (Friends everywhere II): Step out your door, hope for the best.&lt;/p&gt;
+
+&lt;p&gt;However, it’s not all fun and games.  This particular school, and most like it, costs $40k/year to attend.  This is personally unsustainable for the students, leading many into a life of crippling debt (I happened to be good at standardized tests and get a nice scholarship).  In addition, it is societally unsustainable; no one except the professors and a few seniors were producing anything of value to society.  Finally, this particular community was unusually homogenous in age and ability, and the model has not been tested with families and nonacademics.&lt;/p&gt;
 
 &lt;h2&gt;7.  The urban retreat&lt;/h2&gt;
 
@@ -158,8 +184,9 @@ However, it’s not all fun and games.  This particular school, and most like it
 
 &lt;p&gt;The biggest downside to this living arrangement is that it (in my understanding) does not yet exist, and it would require significant capital to start.&lt;/p&gt;
 
-&lt;p&gt;So what do we do now?
-Well, all of our communities suck.  Let’s talk about how to make them suck less.  Or, you could donate large sums of money to me, so that I can start building the first urban retreat.  Either one is good with me.&lt;/p&gt;
+&lt;p&gt;So what do we do now?&lt;/p&gt;
+
+&lt;p&gt;Well, all of our communities suck.  Let’s talk about how to make them suck less.  Or, you could donate large sums of money to me, so that I can start building the first urban retreat.  Either one is good with me.&lt;/p&gt;
 </content>
  </entry>
  

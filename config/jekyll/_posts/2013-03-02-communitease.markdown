@@ -4,7 +4,9 @@ published: true
 title: Communi-tease
 ---
 
-Life in America is a dysfunctional farce.
+#Communi-tease
+
+Life in America is, in most cities, suburbs, and rural areas, systemically dysfunctional.
 
 Let me explain.
 
@@ -52,26 +54,28 @@ The good?  It’s cheap, private, readily available, and the downsides are not r
 
 The bad?  Oh god. Oh god oh god.  Suburbia is TERRIBLE.  The following is a list of posts that I could write about it:
 
-Bullshit Nature:  a patch of grass is not the woods and you’re not fooling anyone, especially your body.
-Fascimile friends:  facebook likes and television characters as substitutes for real connection.
-The disconnect:  If you have to drive 20 minutes, you probably won’t go.
-Nature abhors a suburbia:  we are ruining the planet for our own unhappiness.
-Rage Road:  Cars are not people, but you’re still not allowed to hit them
-Suburb Body:  This one is big.  And riddled with stress-based diseases.
-Suburbia should die a death that is slower and even more painful than the death it causes us.
+*Bullshit Nature:  a patch of grass is not the woods and you’re not fooling anyone, especially your body.
+*Fascimile friends:  facebook likes and television characters as substitutes for real connection.
+*The disconnect:  If you have to drive 20 minutes, you probably won’t go.
+*Nature abhors a suburbia:  we are ruining the planet for our own unhappiness.
+*Rage Road:  Cars are not people, but you’re still not allowed to hit them
+*Suburb Body:  This one is big.  And riddled with stress-based diseases.
+
+I would wish a slow painful death for Suburbia, but the slow part means we'd have to live with it longer.  So I merely wish it death.
 
 ##6.  Residential liberal arts college
 This does as many things right as suburbia does wrong.  My time at one of these was the happiest I’ve ever been, and is what sparked my interest in how communities are built.
 
 My campus was 1200 people, small enough that I could recognize most students on sight but large enough that I had choice in who I wanted to spend my time with.  Repeated exposure made creating casual connections both easier and more rewarding.  80% of students lived within a block of the school.  The school itself was an area of about 1500ftx2000ft, with an athletic center across the highway.  Food, exercise, socializing, and studying was all done in that small area, creating an interweaving mesh of social connections.  Here are some blog posts I could write about it:
 
-In this together: friendship by association in a shared community
-Walk it off:  How college students stay alive and relatively healthy despite the all-nighters and the binge-drinking
-Parks, not parking: the benefits of relegating cars to the sidelines
-Trust Society:  Her laptop was in a public space for 3 days and no one touched it
-Friends everywhere:  How i ate 2-hour meals without getting bored
-The Earth is my Home:  A detailed map of every place on campus I have napped.
-Plans optional (Friends everywhere II): Step out your door, hope for the best.
+*In this together: friendship by association in a shared community
+*Walk it off:  How college students stay alive and relatively healthy despite the all-nighters and the binge-drinking
+*Parks, not parking: the benefits of relegating cars to the sidelines
+*Trust Society:  Her laptop was in a public space for 3 days and no one touched it
+*Friends everywhere:  How i ate 2-hour meals without getting bored
+*The Earth is my Home:  A detailed map of every place on campus I have napped.
+*Plans optional (Friends everywhere II): Step out your door, hope for the best.
+
 However, it’s not all fun and games.  This particular school, and most like it, costs $40k/year to attend.  This is personally unsustainable for the students, leading many into a life of crippling debt (I happened to be good at standardized tests and get a nice scholarship).  In addition, it is societally unsustainable; no one except the professors and a few seniors were producing anything of value to society.  Finally, this particular community was unusually homogenous in age and ability, and the model has not been tested with families and nonacademics.
 
 ##7.  The urban retreat
@@ -84,4 +88,5 @@ Finally, unlike the college (which shares many similarities with the urban retre
 The biggest downside to this living arrangement is that it (in my understanding) does not yet exist, and it would require significant capital to start.
 
 So what do we do now?
+
 Well, all of our communities suck.  Let’s talk about how to make them suck less.  Or, you could donate large sums of money to me, so that I can start building the first urban retreat.  Either one is good with me.
