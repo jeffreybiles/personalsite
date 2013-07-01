@@ -3,7 +3,7 @@ layout: post
 published: true
 title: Mere Exposure, your community's best tool
 ---
-
+<!-- gotta get the links and the pictures from the original post into this -->
 #Mere Exposure:  Your community's best tool
 
 The familiar is comforting.  Fact.  Popularized by Robert B. Zajonc, social psychologist, in 1960s.
