@@ -4,7 +4,7 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2013-06-30T22:18:18-05:00</updated>
+ <updated>2013-07-01T01:52:46-05:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
@@ -54,7 +54,10 @@ I have been an American Watcher for most of my life, although you cannot find it
    <link href="YOUR_URL/mere-exposure.html"/>
    <updated>2013-03-04T00:00:00-06:00</updated>
    <id>BLOG_URL/mere-exposure</id>
-   <content type="html">&lt;h1&gt;Mere Exposure:  Your community&#39;s best tool&lt;/h1&gt;
+   <content type="html">&lt;!-- gotta get the links and the pictures from the original post into this --&gt;
+
+
+&lt;h1&gt;Mere Exposure:  Your community&#39;s best tool&lt;/h1&gt;
 
 &lt;p&gt;The familiar is comforting.  Fact.  Popularized by Robert B. Zajonc, social psychologist, in 1960s.&lt;/p&gt;
 
@@ -187,6 +190,71 @@ I have been an American Watcher for most of my life, although you cannot find it
 &lt;p&gt;So what do we do now?&lt;/p&gt;
 
 &lt;p&gt;Well, all of our communities suck.  Let’s talk about how to make them suck less.  Or, you could donate large sums of money to me, so that I can start building the first urban retreat.  Either one is good with me.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>(link) Correlating Coffeescript Classes with Javascript Prototypes</title>
+   <link href="YOUR_URL/correlating-coffeescript-classes-and-javascript-prototypes.html"/>
+   <updated>2012-12-19T00:00:00-06:00</updated>
+   <id>BLOG_URL/correlating-coffeescript-classes-and-javascript-prototypes</id>
+   <content type="html">&lt;h1&gt;(link) Correlating Coffeescript Classes with Javascript Prototypes&lt;/h1&gt;
+
+&lt;p&gt;Javascript uses prototypes to organize its code, and coffeescript uses classes... but coffeescript compiles down to javascript.  So, somehow, classes get turned into prototypes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.sitepoint.com/correlating-coffeescript-classes-and-javascript-prototypes/&quot;&gt;Here I explain in excruciating detail how that happens&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>(link) Classes in Coffeescript</title>
+   <link href="YOUR_URL/classes-in-coffescript.html"/>
+   <updated>2012-12-12T00:00:00-06:00</updated>
+   <id>BLOG_URL/classes-in-coffescript</id>
+   <content type="html">&lt;h1&gt;(link) Classes in Coffeescript&lt;/h1&gt;
+
+&lt;p&gt;Coffeescript is a language that compiles down to javascript, but has many features that make it easier to write.  One of these is a class system.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.sitepoint.com/classes-in-coffeescript/&quot;&gt;I explain how Coffeescript classes work&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>(link) Prototypes in Javascript</title>
+   <link href="YOUR_URL/prototypes-in-javascript.html"/>
+   <updated>2012-12-07T00:00:00-06:00</updated>
+   <id>BLOG_URL/prototypes-in-javascript</id>
+   <content type="html">&lt;h1&gt;(link) Prototypes in Javascript&lt;/h1&gt;
+
+&lt;p&gt;Javascript isn&#39;t object-oriented in the same way most object-oriented languages are.  Instead of using classes to organize code, it uses prototypes.  In this article I explore what Prototypes are and how to use them.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.sitepoint.com/prototypes-in-javascript/&quot;&gt;Read Here&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>(link) List Processing In Coffeescript</title>
+   <link href="YOUR_URL/List-Processing-In-Coffeescript.html"/>
+   <updated>2012-11-22T00:00:00-06:00</updated>
+   <id>BLOG_URL/List-Processing-In-Coffeescript</id>
+   <content type="html">&lt;h1&gt;(link) List Processing In Coffeescript&lt;/h1&gt;
+
+&lt;p&gt;Coffeescript easily compiles down to javascript, but it steals a lot of good ideas from languages like Python and Haskell... especially with regards to how it processes lists of items.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.sitepoint.com/list-processing-in-coffeescript/&quot;&gt;Here&#39;s an article I wrote for JSPro about this subject&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>(link) An Introduction to Coffeescript</title>
+   <link href="YOUR_URL/an-introduction-to-javascript.html"/>
+   <updated>2012-10-04T00:00:00-05:00</updated>
+   <id>BLOG_URL/an-introduction-to-javascript</id>
+   <content type="html">&lt;h1&gt;(link) An Introduction to Coffeescript&lt;/h1&gt;
+
+&lt;p&gt;I wrote an article for JSPro.com, where I introduce coffeescript:  a language that takes (most of the) pain out of writing and reading javascript.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.sitepoint.com/an-introduction-to-coffeescript/&quot;&gt;Here&#39;s the article&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
