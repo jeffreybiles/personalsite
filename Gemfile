@@ -16,6 +16,7 @@ gem 'json'
 gem 'quiet_assets'
 gem 'make_resourceful'
 gem 'bloggy'
+gem 'skylight'
 
 # Gems used only for assets and not required
 # in production environments by default.
