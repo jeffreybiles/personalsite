@@ -25,7 +25,7 @@ Personalsite::Application.routes.draw do
   match '/blowback/making_of/4' => 'high_voltage/pages#show', as: :static, id: 'making_of_blowback/4'
   match '/blowback/making_of/5' => 'high_voltage/pages#show', as: :static, id: 'making_of_blowback/5'
 
-
+  match '/math-monsters/splash' => 'high_voltage/pages#show', as: :static, id: 'math-monsters/splash'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
