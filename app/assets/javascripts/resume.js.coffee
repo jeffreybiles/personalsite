@@ -21,9 +21,13 @@ jQuery ->
     $('#resumes').children().hide();
     $('#2014Resume').fadeIn(700);
 
+  $('#resume_switcher #2015').click ->
+    $('#resumes').children().hide();
+    $('#2015Resume').fadeIn(700);
+
   $('#resume_switcher #buzzword').click ->
     $('#resumes').children().hide();
     $('#buzzwordResume').fadeIn(700);
 
   $('#resumes').children().hide();
-  $('#2014Resume').show();
+  $('#2015Resume').show();
