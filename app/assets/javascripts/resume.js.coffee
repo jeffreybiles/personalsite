@@ -34,4 +34,4 @@ jQuery ->
     $('#buzzwordResume').fadeIn(700);
 
   $('#resumes').children().hide();
-  $('#2015Resume').show();
+  $('#2016Resume').show();
